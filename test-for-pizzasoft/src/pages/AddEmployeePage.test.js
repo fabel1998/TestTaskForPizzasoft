@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import AddEmployeePage from '../pages/AddEmployeePage';
 import EmployeeForm from '../components/EmployeeForm';
 
-// Mock EmployeeForm to isolate AddEmployeePage test
 jest.mock('../components/EmployeeForm', () => () => <div data-testid="employee-form"></div>);
 
 describe('AddEmployeePage', () => {
