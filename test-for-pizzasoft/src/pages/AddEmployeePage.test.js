@@ -11,10 +11,8 @@ describe('AddEmployeePage', () => {
   test('renders AddEmployeePage with title and EmployeeForm', () => {
     render(<AddEmployeePage />);
     
-    // Check if the title is rendered
     expect(screen.getByText('Добавить нового сотрудника')).toBeInTheDocument();
     
-    // Check if the EmployeeForm is rendered
     expect(screen.getByTestId('employee-form')).toBeInTheDocument();
   });
 });
