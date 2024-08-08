@@ -11,8 +11,6 @@ const EmployeeList = ({ employees }) => {
             <h3>{emp.name}</h3>
             <p><strong>Должность:</strong> {emp.role}</p>
             <p><strong>Телефон:</strong> {emp.phone}</p>
-            <p><strong>День рождения:</strong> {emp.birthday}</p>
-            <p><strong>В архиве:</strong> {emp.isArchive ? 'Yes' : 'No'}</p>
           </div>
         </Link>
       ))}

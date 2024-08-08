@@ -19,38 +19,3 @@ body {
     margin-right: 10px;
   }
 }
-
-.employee-form {
-  div {
-    margin-bottom: 10px;
-
-    label {
-      display: block;
-    }
-
-    input[type="text"],
-    select {
-      width: 100%;
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-  }
-
-  button {
-    padding: 10px 20px;
-    background: $primary-color;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &:hover {
-      background: darken($primary-color, 10%);
-    }
-  }
-}

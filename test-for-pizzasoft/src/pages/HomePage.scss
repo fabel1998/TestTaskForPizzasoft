@@ -1,42 +1,139 @@
 .home-page {
-    padding: 20px;
-  
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-  
-    .controls {
+  padding: 20px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .filter-control {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-  
-      .filter-control {
-        display: flex;
-        align-items: center;
-  
-        select,
-        input[type="checkbox"] {
-          margin-right: 5px;
-        }
+
+      select,
+      input[type="checkbox"] {
+        margin-right: 5px;
       }
-  
-      .add-employee-button {
-        margin-left: auto;
-  
-        button {
-          background-color: #007bff;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          cursor: pointer;
-  
-          &:hover {
-            background-color: #0056b3;
-          }
+    }
+
+    .add-employee-button {
+      margin-left: auto;
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #0056b3;
         }
       }
     }
   }
+
+  .employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .employee-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      strong {
+        color: #333;
+      }
+    }
+  }
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .filter-control,
+    .add-employee-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .add-employee-button {
+      margin-left: 0;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Адаптивный дизайн для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .filter-control,
+    .add-employee-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .add-employee-button {
+      margin-left: 0;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Адаптивный дизайн для настольных компьютеров */
+@media (min-width: 1025px) {
+  .controls {
+    flex-direction: row;
+    align-items: center;
+
+    .filter-control,
+    .add-employee-button {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    .add-employee-button {
+      margin-left: auto;
+
+      button {
+        width: auto;
+      }
+    }
+  }
+}
