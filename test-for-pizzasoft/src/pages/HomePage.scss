@@ -1,0 +1,42 @@
+.home-page {
+    padding: 20px;
+  
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+  
+      .filter-control {
+        display: flex;
+        align-items: center;
+  
+        select,
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+      }
+  
+      .add-employee-button {
+        margin-left: auto;
+  
+        button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }

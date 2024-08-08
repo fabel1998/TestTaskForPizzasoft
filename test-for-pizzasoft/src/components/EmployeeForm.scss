@@ -1,0 +1,17 @@
+@import './src/styles/variables.scss';
+
+.link_to_main{
+    font-size: 13px;
+    padding: 10px 20px;
+    background: $secondary-color;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+
+    &:hover {
+        background: darken($secondary-color, 10%);
+    }
+}
